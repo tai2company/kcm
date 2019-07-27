@@ -146,6 +146,129 @@ hr {
     </div>
   </form>
 </div>
+<h2>JavaScript For Loop</h2>
+<button onclick="cit(global)"> global</button>
+<button onclick="cit(aisa)">aisa</button>
+<button onclick="cit(us)">us </button>
+<button onclick="cit(eu)"> eu</button>
+<p id="demo"></p>
+<style>
+.cit{
+border:1px solid black;
+padding:20px;
+display: inline-block;}
+ 
+
+</style>
+<script>
+var global = ["上海", "紐約", "東京", "深圳", "洛杉磯", "倫敦", "舊金山", "首爾", "巴黎", "芝加哥",  "京阪神", "華盛頓", "萊因盧爾", "達拉斯", "休士頓", "費城", "波士頓", "墨西哥城", "聖保羅", "孟買", "雪梨", "米蘭"];
+var aisa = ["上海",  "東京", "深圳", "首爾", "京阪神",  "孟買", ];
+var us = [  "紐約",  "洛杉磯",   "舊金山",  "芝加哥",   "華盛頓", "達拉斯", "休士頓", "費城", "波士頓"];
+var eu = [  "倫敦",   "巴黎",  "萊因盧爾",   "米蘭"];
+var i, len, text;
+function cit(o){
+var d=document.getElementById("demo");
+for (i = 0, len = o.length, text = ""; i < len; i++) {
+ d.innerHTML += "<p class='cit'>"+o[i]  + "<br>";}
+ 
+
+ }
+ 
+</script>
+
+
+<h2>Accordion</h2>
+
+<button class="accordion">Section 1</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<a id="ds">232 </a>
+<br>
+<a id="dl" onclick="pi()"> </a>
+<input id="vl"  >
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<script>
+ 
+ var di=["上海", "紐約", "東京", "深圳", "洛杉磯" ];
+ var dc=  document.getElementById("dl");
+var i;
+ 
+for (i = 0; i <di.length; i++) {
+dc.innerHTML+=  di[i] + "<br>";
+ dc.className="yi";
+  } 
+  function pi(){
+ var sc=  document.getElementById("vl");
+ dc.style.fontSize=sc.value+"px";
+ 
+ }
+ pi()
+ 
+ var myVar =setInterval(pi, 500);
+</script>
+<style>
+.yi{
+font-size:20px;}
+</style>
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
 
 <script>
 // Get the modal
