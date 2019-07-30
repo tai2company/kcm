@@ -14,11 +14,12 @@
 
 <p>The best way to loop through an array is using a standard for loop:</p>
 
-
+<button type="button" onclick="loadDoc()">Change Content</button>
 <button onclick="yu(global)">global</button>
 <button onclick="yu(us)">us</button>
 <button onclick="yu(aisa)">aisa</button>
 <button onclick="yu(eu)">eu</button>
+ <p id="dem ">Let AJAX change this text.</p>
 <p id="demo"></p>
 <style>
 .cit{
@@ -45,5 +46,20 @@ text += "</div>";
 document.getElementById("demo").innerHTML = text;}
 </script>
 
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("dem ").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "llo.txt", true);
+  xhttp.send();
+}
+</script> 
+ 
+ 
 </body>
 </html>
