@@ -17,6 +17,7 @@
 <p>The best way to loop through an array is using a standard for loop:</p>
 
 <button type="button" onclick="loadDoc()">Change Content</button>
+ <button type="button" onclick="ck()">Change</button>
 <button onclick="yu(global)">global</button>
 <button onclick="yu(us)">us</button>
 <button onclick="yu(aisa)">aisa</button>
@@ -57,6 +58,16 @@ function loadDoc() {
     }
   };
   xhttp.open("GET", "llo.txt", true);
+  xhttp.send();
+}
+ function ck() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "dc.html", true);
   xhttp.send();
 }
 </script> 
