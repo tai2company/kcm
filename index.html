@@ -9,21 +9,67 @@
 <title>aoao.116*117</title>
 </head>
 <body>
+<style>
+*{
+text-align:center;
+margin:0px;
+}
+.li{
+background:	 linear-gradient(#003d79,#009393);
+transistion:1s;
 
+}
+.li:hover{
+background:	 linear-gradient(#921aff,#2828ff);
+
+}
+.lo{
+display:inline-block;
+color:white;
+padding:20px;
+ transition:0.5s;
+ margin:0px;
+
+}
+
+.ld{
+background:#272727;
+padding:40px;}
+
+.lo:hover{color:#02c874;
+background:white;}
+.lo:active{color:#00e3e3;}
+</style>
  
+
+
+
+<div class="li">
+<a onclick="yu(global)" class="lo">global</a>
+<a onclick="yu(us)" class="lo">us</a>
+<a onclick="yu(aisa)" class="lo">aisa</a>
+<a onclick="yu(eu)" class="lo">eu</a>
+<a onclick="loadDoc()" class="lo">Change Content</a>
+<a onclick="ck()" class="lo">Change</a>
+
+</div>
+
+
+
+<p id="demo"></p>
+<div class="ld">
+
+
+</div>
  
 <h2>JavaScript Arrays</h2>
 
 <p>The best way to loop through an array is using a standard for loop:</p>
 
-<button type="button" onclick="loadDoc()">Change Content</button>
- <button type="button" onclick="ck()">Change</button>
-<button onclick="yu(global)">global</button>
-<button onclick="yu(us)">us</button>
-<button onclick="yu(aisa)">aisa</button>
-<button onclick="yu(eu)">eu</button>
  <p id="dem ">Let AJAX change this text.</p>
-<p id="demo"></p>
+ 
+ 
+ 
 <style>
 .cit{
 border:1px solid black;
@@ -31,7 +77,6 @@ padding:20px;
 display: inline-block;
 margin:10px;}
  
-
 </style>
 <script>
 var   text,  i;
@@ -39,13 +84,13 @@ var global = ["上海", "紐約", "東京", "深圳", "洛杉磯", "倫敦", "�
 var aisa = ["上海",  "東京", "深圳", "首爾", "京阪神",  "孟買"];
 var us = [  "紐約",  "洛杉磯",   "舊金山",  "芝加哥",   "華盛頓", "達拉斯", "休士頓", "費城", "波士頓"];
 var eu = [  "倫敦",   "巴黎",  "萊因盧爾",   "米蘭"];
+yu(global)
 function yu(f){
 text = "<div>";
 for (i = 0; i < f.length; i++) {
   text += " <a class='cit'> " + f[i] + "</a>";
 }
 text += "</div>";
-
 document.getElementById("demo").innerHTML = text;}
 </script>
 
