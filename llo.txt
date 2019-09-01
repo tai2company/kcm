@@ -1,40 +1,41 @@
-輸出
-語法
-註釋
-變量
-算術
-數據類型
-函數
-對象
-事件
-字符串
-數字
-數組
-日期
-數學
-布爾
-比較
-開關
-循環
-類型轉換
+
+Output
+grammar
+Comment
+variable
+arithmetic
+type of data
+function
+Object
+event
+String
+digital
+Array
+date
+mathematics
+Boolean
+Comparison
+switch
+cycle
+Type conversion
 Bitwise
 RegExp
-錯誤
+error
 Scope
-吊裝
-嚴格模式
-這個關鍵字
-讓
+Hoisting
+Strict mode
+This keyword
+Let
 Const
-箭頭函數
-類
-調試
-樣式指南
-最佳實踐
-錯誤
-性能
-保留字
-版本
-版本ES5
-版本ES6
+Arrow function
+class
+debugging
+Style guide
+Best Practices
+error
+performance
+Reserved word
+version
+Version ES5
+Version ES6
 ON
