@@ -1,8 +1,8 @@
 var   text,  i;
-var global = ["上海", "紐約", "東京", "深圳", "洛杉磯", "倫敦", "舊金山", "首爾", "巴黎", "芝加哥",  "京阪神", "華盛頓", "萊因盧爾", "達拉斯", "休士頓", "費城", "波士頓", "墨西哥城", "聖保羅", "孟買", "雪梨", "米蘭"];
-var aisa = ["上海",  "東京", "深圳", "首爾", "京阪神",  "孟買"];
-var us = [  "紐約",  "洛杉磯",   "舊金山",  "芝加哥",   "華盛頓", "達拉斯", "休士頓", "費城", "波士頓"];
-var eu = [  "倫敦",   "巴黎",  "萊因盧爾",   "米蘭"];
+var global = ["Shanghai", "New York", "Tokyo", "Shenzhen", "Los Angeles", "London", "San Francisco", "Seoul", "Paris", "Chicago", "Keihan God", "Washington", "Linluur", "Dallas", "Houston", "Philadelphia", "Boston", "Mexico City", "Sao Paulo", "Mumbai", "Sydney", "Milan"];
+var aisa = ["Shanghai", "Tokyo", "Shenzhen", "Seoul", "Keihan God", "Mumbai"];
+var us = ["New York", "Los Angeles", "San Francisco", "Chicago", "Washington", "Dallas", "Houston", "Philadelphia", "Boston"];
+var eu = ["London", "Paris", "Linluur", "Milan"];
 yu(global)
 function yu(f){
 text = "<div>";
