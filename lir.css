@@ -9,6 +9,7 @@ transition:1s;
 }
 .li:hover{
 background:	 linear-gradient(#921aff,#2828ff);
+ transition:1s;
 
 }
 .lo{
