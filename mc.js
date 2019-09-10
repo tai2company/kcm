@@ -11,3 +11,4 @@ for (i = 0; i < f.length; i++) {
 }
 text += "</div>";
 document.getElementById("demo").innerHTML = text;}
+document.getElementById("demo").style.display="none";
