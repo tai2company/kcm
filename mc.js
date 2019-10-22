@@ -3,8 +3,9 @@ var global = aisa+ us + eu;
 var aisa = ["Shanghai", "Tokyo", "Shenzhen", "Seoul", "Keihan God", "Mumbai"];
 var us = ["New York", "Los Angeles", "San Francisco", "Chicago", "Washington", "Dallas", "Houston", "Philadelphia", "Boston"];
 var eu = ["London", "Paris", "Linluur", "Milan"];
+var global = aisa+ us + eu;
+
  var de=document.getElementById("demo"); 
-var de=document.getElementById("demo"); 
 
 function yu(f){
 text = "<div>";
