@@ -1,8 +1,8 @@
 var   text,  i;
-var aisa = ["Shanghai", "Tokyo", "Shenzhen", "Seoul", "Keihan God", "Mumbai"];
+var asia = ["Shanghai", "Tokyo", "Shenzhen", "Seoul", "Keihan God", "Mumbai"];
 var us = ["New York", "Los Angeles", "San Francisco", "Chicago", "Washington", "Dallas", "Houston", "Philadelphia", "Boston"];
 var eu = ["London", "Paris", "Linluur", "Milan"];
-var global = aisa+ us + eu;
+var global = us.concat(eu,asia);
 
  var de=document.getElementById("demo"); 
 
